@@ -2,8 +2,14 @@
 <html>
     <head>
         <title>Minha primeira view Flask</title>
+        <link rel="stylesheet" href="/static/style/style.css">
     </head>
     <body>
         <h1>Olá minha primeira view do Flask</h1>
+        <p>{{ title | upper}}</p>
+        <p>{{ outra }}</p>
+        {% for elemento in lista %}
+        <p>{{elemento}}</p>
+        {% endfor %}
     </body>
 </html>

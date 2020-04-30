@@ -1,6 +1,6 @@
-from flask import flask
+from flask import Flask
 
-app = flask(__name__)
+app = Flask(__name__)
 
 @app.route('/home')
 def ola():
@@ -14,4 +14,4 @@ def pagina_principal():
 def outra_pagina():
     return '<h1>Outra página</h1>'
 
-app.run()
+app.run(debug=True)
