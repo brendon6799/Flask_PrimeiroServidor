@@ -8,8 +8,8 @@
         <h1>Olá minha primeira view do Flask</h1>
         <p>{{ title | upper}}</p>
         <p>{{ outra }}</p>
-        <!--{% for elemento in lista %}-->
+        {% for elemento in lista %}
         <li>Item {{ loop.index }}: {{ elemento | upper }}</li>
-        <!--{% endfor %}-->
+        {% endfor %}
     </body>
 </html>
